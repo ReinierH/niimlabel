@@ -1,0 +1,64 @@
+name: NiimLabel
+options:
+  bundleIdPrefix: nl.computhings
+  deploymentTarget:
+    macOS: "14.0"
+    iOS: "17.0"
+  createIntermediateGroups: true
+  developmentLanguage: nl
+
+packages:
+  NiimbotKit:
+    path: Packages/NiimbotKit
+
+settings:
+  base:
+    SWIFT_VERSION: "5.0"
+    MARKETING_VERSION: "1.0.0"
+    CURRENT_PROJECT_VERSION: "1"
+
+targets:
+  NiimLabel:
+    type: application
+    supportedDestinations: [macOS, iOS]
+    sources:
+      - App/Sources
+      - App/Resources
+    dependencies:
+      - package: NiimbotKit
+        product: NiimbotKit
+      - package: NiimbotKit
+        product: LabelKit
+    info:
+      path: App/Info.plist
+      properties:
+        CFBundleDisplayName: NiimLabel
+        CFBundleShortVersionString: $(MARKETING_VERSION)
+        CFBundleVersion: $(CURRENT_PROJECT_VERSION)
+        CFBundleDevelopmentRegion: nl
+        LSApplicationCategoryType: public.app-category.productivity
+        NSBluetoothAlwaysUsageDescription: NiimLabel gebruikt Bluetooth om verbinding te maken met je Niimbot-labelprinter.
+        NSHumanReadableCopyright: © 2026 CompuThings B.V.
+        UILaunchScreen: {}
+        UIApplicationSceneManifest:
+          UIApplicationSupportsMultipleScenes: true
+        UISupportedInterfaceOrientations~ipad:
+          - UIInterfaceOrientationPortrait
+          - UIInterfaceOrientationPortraitUpsideDown
+          - UIInterfaceOrientationLandscapeLeft
+          - UIInterfaceOrientationLandscapeRight
+        UISupportedInterfaceOrientations~iphone:
+          - UIInterfaceOrientationPortrait
+          - UIInterfaceOrientationLandscapeLeft
+          - UIInterfaceOrientationLandscapeRight
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: nl.computhings.niimlabel
+        PRODUCT_NAME: NiimLabel
+        ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
+        CODE_SIGN_STYLE: Automatic
+        "CODE_SIGN_IDENTITY[sdk=macosx*]": "-"
+        "CODE_SIGN_ENTITLEMENTS[sdk=macosx*]": App/NiimLabel.entitlements
+        ENABLE_HARDENED_RUNTIME: YES
+        TARGETED_DEVICE_FAMILY: "1,2"
+        SUPPORTS_MACCATALYST: NO

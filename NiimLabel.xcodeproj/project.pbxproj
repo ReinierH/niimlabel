@@ -1,0 +1,450 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1EBA7455F831EAD371F80C04 /* LabelKit in Frameworks */ = {isa = PBXBuildFile; productRef = 64AE01C042CBAFCFC1224536 /* LabelKit */; };
+		319F313F4EB611098389F8BE /* NiimbotKit in Frameworks */ = {isa = PBXBuildFile; productRef = BD520765193BC19EC9377B9F /* NiimbotKit */; };
+		38A4F2B49BFA5A4C16DB54B2 /* AppModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C472FBD96B19682FEF6C41C8 /* AppModel.swift */; };
+		44DEE73B30D2E08B90EA9222 /* TemplateStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD776D5E6338FC77A72F8D27 /* TemplateStore.swift */; };
+		48C4C39F29FE39BF2653190C /* PrintSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64A61FCCE97EBE695543D92A /* PrintSheet.swift */; };
+		4A75F1743A2FEAFCB638D9E5 /* EditorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5897E2D95B984D9F8DCDF2C3 /* EditorView.swift */; };
+		828791F25A15000DB98F5DF1 /* NewLabelSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = C87B6ECC88ECE8ABF95CC15E /* NewLabelSheet.swift */; };
+		8D950CCC952CA496DC623EF7 /* DebugSnapshot.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5349EF3A49A945F4014F4B2 /* DebugSnapshot.swift */; };
+		9AC28079278453EB50D4A2B2 /* LabelEditor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 175806F9DD6B9B38E5EE0BD1 /* LabelEditor.swift */; };
+		A6167FDB77CBEE477D48E270 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 63AC70D6B83CE27570AA317E /* Assets.xcassets */; };
+		BE4F6E7AC93991BAE9640423 /* PrinterPanel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7F3F6C7F926A3CC6AAD62E3 /* PrinterPanel.swift */; };
+		CE1D7E714BFAD06A0BE0637A /* TemplateSidebar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54B3BF850409E0202EC215B4 /* TemplateSidebar.swift */; };
+		D4910EFBCABC5DC8D3D71621 /* PrinterController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0129CB707706F1A07AE7C6D /* PrinterController.swift */; };
+		DDA325AF56473DB299CBC644 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6E48532F3830E91BF9C6D1F /* ContentView.swift */; };
+		EA84BC85E1799DAEEFE17FF5 /* NiimLabelApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B1D153D8B1F1C17A5C05655 /* NiimLabelApp.swift */; };
+		FED67364FE77DA4F1062B910 /* InspectorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FC1002D0204F5557F2AAE14 /* InspectorView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		175806F9DD6B9B38E5EE0BD1 /* LabelEditor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelEditor.swift; sourceTree = "<group>"; };
+		1B1D153D8B1F1C17A5C05655 /* NiimLabelApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NiimLabelApp.swift; sourceTree = "<group>"; };
+		54B3BF850409E0202EC215B4 /* TemplateSidebar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemplateSidebar.swift; sourceTree = "<group>"; };
+		5897E2D95B984D9F8DCDF2C3 /* EditorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditorView.swift; sourceTree = "<group>"; };
+		5FC1002D0204F5557F2AAE14 /* InspectorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InspectorView.swift; sourceTree = "<group>"; };
+		63AC70D6B83CE27570AA317E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		64A61FCCE97EBE695543D92A /* PrintSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrintSheet.swift; sourceTree = "<group>"; };
+		8AC9003D2FDCB7E5F718FB35 /* NiimLabel.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = NiimLabel.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BD776D5E6338FC77A72F8D27 /* TemplateStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemplateStore.swift; sourceTree = "<group>"; };
+		C472FBD96B19682FEF6C41C8 /* AppModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppModel.swift; sourceTree = "<group>"; };
+		C53DA8081FF9C2D36189B6E1 /* NiimbotKit */ = {isa = PBXFileReference; lastKnownFileType = folder; name = NiimbotKit; path = Packages/NiimbotKit; sourceTree = SOURCE_ROOT; };
+		C7F3F6C7F926A3CC6AAD62E3 /* PrinterPanel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrinterPanel.swift; sourceTree = "<group>"; };
+		C87B6ECC88ECE8ABF95CC15E /* NewLabelSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewLabelSheet.swift; sourceTree = "<group>"; };
+		D0129CB707706F1A07AE7C6D /* PrinterController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrinterController.swift; sourceTree = "<group>"; };
+		D5349EF3A49A945F4014F4B2 /* DebugSnapshot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DebugSnapshot.swift; sourceTree = "<group>"; };
+		E6E48532F3830E91BF9C6D1F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BB1280C75E772C901F2F6AA7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				319F313F4EB611098389F8BE /* NiimbotKit in Frameworks */,
+				1EBA7455F831EAD371F80C04 /* LabelKit in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1718D3363D2753EDD930DCC3 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				63AC70D6B83CE27570AA317E /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		263C88C5510187C7297D84D9 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				E6E48532F3830E91BF9C6D1F /* ContentView.swift */,
+				5897E2D95B984D9F8DCDF2C3 /* EditorView.swift */,
+				5FC1002D0204F5557F2AAE14 /* InspectorView.swift */,
+				C87B6ECC88ECE8ABF95CC15E /* NewLabelSheet.swift */,
+				C7F3F6C7F926A3CC6AAD62E3 /* PrinterPanel.swift */,
+				64A61FCCE97EBE695543D92A /* PrintSheet.swift */,
+				54B3BF850409E0202EC215B4 /* TemplateSidebar.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		411FEA53C35FAEE8EBFBF5F8 = {
+			isa = PBXGroup;
+			children = (
+				938909672F256314646F132B /* App */,
+				59B206E4F2AC9C8559DEB0FF /* Packages */,
+				D72E021B402FA98772CDDD37 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		59B206E4F2AC9C8559DEB0FF /* Packages */ = {
+			isa = PBXGroup;
+			children = (
+				C53DA8081FF9C2D36189B6E1 /* NiimbotKit */,
+			);
+			path = Packages;
+			sourceTree = "<group>";
+		};
+		7D01A74A0C1E0E85B0E8CC33 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				C472FBD96B19682FEF6C41C8 /* AppModel.swift */,
+				175806F9DD6B9B38E5EE0BD1 /* LabelEditor.swift */,
+				D0129CB707706F1A07AE7C6D /* PrinterController.swift */,
+				BD776D5E6338FC77A72F8D27 /* TemplateStore.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		938909672F256314646F132B /* App */ = {
+			isa = PBXGroup;
+			children = (
+				1718D3363D2753EDD930DCC3 /* Resources */,
+				BE332FE3472E5695A2D3800F /* Sources */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		BE332FE3472E5695A2D3800F /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				D5349EF3A49A945F4014F4B2 /* DebugSnapshot.swift */,
+				1B1D153D8B1F1C17A5C05655 /* NiimLabelApp.swift */,
+				7D01A74A0C1E0E85B0E8CC33 /* Models */,
+				263C88C5510187C7297D84D9 /* Views */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		D72E021B402FA98772CDDD37 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8AC9003D2FDCB7E5F718FB35 /* NiimLabel.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4ABB369AC0C0D29A641C4691 /* NiimLabel */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 136C004701EAB8A1A599A0C8 /* Build configuration list for PBXNativeTarget "NiimLabel" */;
+			buildPhases = (
+				225BF257FFA898A7EC14105F /* Sources */,
+				80C04CFC4AA602AB9AB0F9AC /* Resources */,
+				BB1280C75E772C901F2F6AA7 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NiimLabel;
+			packageProductDependencies = (
+				BD520765193BC19EC9377B9F /* NiimbotKit */,
+				64AE01C042CBAFCFC1224536 /* LabelKit */,
+			);
+			productName = NiimLabel;
+			productReference = 8AC9003D2FDCB7E5F718FB35 /* NiimLabel.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EFBACA1D4FDB3B7A4D10F26F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					4ABB369AC0C0D29A641C4691 = {
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 9AAFCE3A15298D4BA8F13704 /* Build configuration list for PBXProject "NiimLabel" */;
+			developmentRegion = nl;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				nl,
+			);
+			mainGroup = 411FEA53C35FAEE8EBFBF5F8;
+			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				1DB9C4C511C19FE662BF7D76 /* XCLocalSwiftPackageReference "Packages/NiimbotKit" */,
+			);
+			preferredProjectObjectVersion = 77;
+			productRefGroup = D72E021B402FA98772CDDD37 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4ABB369AC0C0D29A641C4691 /* NiimLabel */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		80C04CFC4AA602AB9AB0F9AC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A6167FDB77CBEE477D48E270 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		225BF257FFA898A7EC14105F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				38A4F2B49BFA5A4C16DB54B2 /* AppModel.swift in Sources */,
+				DDA325AF56473DB299CBC644 /* ContentView.swift in Sources */,
+				8D950CCC952CA496DC623EF7 /* DebugSnapshot.swift in Sources */,
+				4A75F1743A2FEAFCB638D9E5 /* EditorView.swift in Sources */,
+				FED67364FE77DA4F1062B910 /* InspectorView.swift in Sources */,
+				9AC28079278453EB50D4A2B2 /* LabelEditor.swift in Sources */,
+				828791F25A15000DB98F5DF1 /* NewLabelSheet.swift in Sources */,
+				EA84BC85E1799DAEEFE17FF5 /* NiimLabelApp.swift in Sources */,
+				48C4C39F29FE39BF2653190C /* PrintSheet.swift in Sources */,
+				D4910EFBCABC5DC8D3D71621 /* PrinterController.swift in Sources */,
+				BE4F6E7AC93991BAE9640423 /* PrinterPanel.swift in Sources */,
+				CE1D7E714BFAD06A0BE0637A /* TemplateSidebar.swift in Sources */,
+				44DEE73B30D2E08B90EA9222 /* TemplateStore.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		15974E9BC24F0ADDC06F549B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		307E3F35A379CDDD458EA86E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_ENTITLEMENTS[sdk=macosx*]" = App/NiimLabel.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
+				CODE_SIGN_STYLE = Automatic;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = App/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = nl.computhings.niimlabel;
+				PRODUCT_NAME = NiimLabel;
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		7774F8BED26AD3448DEC1D19 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_ENTITLEMENTS[sdk=macosx*]" = App/NiimLabel.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
+				CODE_SIGN_STYLE = Automatic;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = App/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = nl.computhings.niimlabel;
+				PRODUCT_NAME = NiimLabel;
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		C41BB0BA8523ADA8322551EA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		136C004701EAB8A1A599A0C8 /* Build configuration list for PBXNativeTarget "NiimLabel" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				307E3F35A379CDDD458EA86E /* Debug */,
+				7774F8BED26AD3448DEC1D19 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		9AAFCE3A15298D4BA8F13704 /* Build configuration list for PBXProject "NiimLabel" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C41BB0BA8523ADA8322551EA /* Debug */,
+				15974E9BC24F0ADDC06F549B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCLocalSwiftPackageReference section */
+		1DB9C4C511C19FE662BF7D76 /* XCLocalSwiftPackageReference "Packages/NiimbotKit" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = Packages/NiimbotKit;
+		};
+/* End XCLocalSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		64AE01C042CBAFCFC1224536 /* LabelKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = LabelKit;
+		};
+		BD520765193BC19EC9377B9F /* NiimbotKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = NiimbotKit;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = EFBACA1D4FDB3B7A4D10F26F /* Project object */;
+}
