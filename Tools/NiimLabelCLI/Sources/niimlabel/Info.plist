@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CFBundleIdentifier</key>
+	<string>nl.computhings.niimlabel.cli</string>
+	<key>CFBundleName</key>
+	<string>niimlabel</string>
+	<key>NSBluetoothAlwaysUsageDescription</key>
+	<string>niimlabel gebruikt Bluetooth om labels af te drukken op je Niimbot-printer.</string>
+</dict>
+</plist>

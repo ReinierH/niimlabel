@@ -66,6 +66,19 @@ cd Packages/NiimbotKit && swift test
 
 Voor iOS/iPadOS stel je in Xcode een Development Team in. macOS bouwt ad-hoc gesigneerd met App Sandbox en de Bluetooth-entitlement.
 
+## Command-line tool
+
+`Tools/NiimLabelCLI` rendert en print labels zonder de app, handig voor scripts of automatisering. Het label is een JSON-bestand in hetzelfde formaat als de export van de app.
+
+```sh
+cd Tools/NiimLabelCLI && swift build -c release
+.build/release/niimlabel scan                                   # printers in de buurt
+.build/release/niimlabel render label.json voorbeeld.png        # 1-bit voorbeeld (3× vergroot)
+.build/release/niimlabel print label.json --copies 2 --device B1
+```
+
+De eerste keer vraagt macOS om toestemming voor Bluetooth, voor de terminal of voor `niimlabel`.
+
 ## Opbouw
 
 ```
@@ -94,5 +107,6 @@ Gebaseerd op het openbare reverse-engineeringwerk van [niimprint](https://github
 
 - **Stopt halverwege of geeft strepen**: verhoog *Pauze tussen pakketten* bij Instellingen › Geavanceerd.
 - **Print niets of iets vreemds**: zet het protocol handmatig op het andere type en bekijk het logboek.
+- **Afdruk 90° gedraaid**: Niimbot-rollen lopen met de korte kant over de printkop. Ontwerp liggend en zet *Afdrukrichting* op 90° (de standaard voor nieuwe labels sinds 1.0.1).
 - **Label verschoven**: gebruik *Uitlijning corrigeren* in het labelpaneel. Kalibreer de B1 door twee keer kort op de aan/uit-knop te drukken.
 - **Bluetooth geweigerd**: Systeeminstellingen › Privacy en beveiliging › Bluetooth.

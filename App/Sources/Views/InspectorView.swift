@@ -66,7 +66,7 @@ struct LabelInspector: View {
             } header: {
                 Text("Afdrukken")
             } footer: {
-                Text("Draai 90° als je het label liggend ontwerpt maar het staand door de printer gaat (bijv. D11/D110-labels).")
+                Text("Bij Niimbot-rollen (B1, B21, D11, D110) loopt de korte kant over de printkop: ontwerp liggend en druk af met 90°. Komt de afdruk gedraaid of ondersteboven uit, kies dan een andere richting.")
             }
 
             Section("Uitlijning corrigeren") {

@@ -94,6 +94,21 @@ final class RendererTests: XCTestCase {
         XCTAssertEqual(d11.height, 320)
     }
 
+    func testB1DefaultsRotateLandscapeLabels() {
+        // Verified on a real B1: a 60×40 roll feeds with the 40 mm side across the head.
+        XCTAssertEqual(LabelDocument.suggestedRotation(widthMM: 60, heightMM: 40, printheadMM: 48), 90)
+        XCTAssertEqual(LabelDocument.suggestedRotation(widthMM: 40, heightMM: 12, printheadMM: 12), 90)
+        XCTAssertEqual(LabelDocument.suggestedRotation(widthMM: 40, heightMM: 80, printheadMM: 48), 0)
+        let presets = LabelPreset.presets(for: .b1)
+        XCTAssertTrue(presets.contains { $0.widthMM == 60 && $0.heightMM == 40 })
+        XCTAssertTrue(presets.allSatisfy { $0.printRotation == 90 && $0.acrossHeadMM <= 50.4 })
+
+        let document = LabelDocument(name: "60x40", widthMM: 60, heightMM: 40, printRotation: 90)
+        let bitmap = LabelRenderer.shared.printBitmap(for: document, model: .b1)
+        XCTAssertEqual(bitmap.width, 320) // 40 mm across the head
+        XCTAssertEqual(bitmap.height, 480)
+    }
+
     func testImageDithering() throws {
         // 2×1 PNG: black and white pixel, generated in memory.
         let ctx = CGContext(data: nil, width: 2, height: 1, bitsPerComponent: 8, bytesPerRow: 0,

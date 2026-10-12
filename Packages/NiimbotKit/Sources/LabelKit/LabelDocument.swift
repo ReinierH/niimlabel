@@ -54,11 +54,10 @@ public struct LabelDocument: Codable, Identifiable, Equatable, Sendable {
         elements.first { $0.id == id }
     }
 
-    /// Default rotation for a new label: rotate when the label is too wide for the head but fits sideways.
+    /// Default rotation for a new label. Niimbot rolls feed with the short side across the head, so a
+    /// landscape design is rotated 90° whenever its height fits the head; otherwise it is sent unrotated.
     public static func suggestedRotation(widthMM: Double, heightMM: Double, printheadMM: Double) -> Int {
-        let tolerance = printheadMM * 1.05
-        if widthMM <= tolerance { return 0 }
-        return heightMM <= tolerance ? 90 : 0
+        heightMM <= printheadMM * 1.05 ? 90 : 0
     }
 }
 

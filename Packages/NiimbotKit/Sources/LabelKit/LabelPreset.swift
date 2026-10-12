@@ -27,14 +27,14 @@ public struct LabelPreset: Identifiable, Hashable, Sendable {
         self.note = note
     }
 
-    /// Presets for wide printers (B1, B21, B3S, B203).
+    /// Presets for wide printers (B1, B21, B3S, B203). The rolls feed with the short side across the
+    /// print head, so labels are designed landscape and printed rotated 90°.
     public static let wide: [LabelPreset] = [
-        LabelPreset(50, 30), LabelPreset(50, 20), LabelPreset(50, 15), LabelPreset(50, 40), LabelPreset(50, 50),
-        LabelPreset(50, 70), LabelPreset(50, 80), LabelPreset(40, 30), LabelPreset(40, 20), LabelPreset(40, 40),
-        LabelPreset(40, 60), LabelPreset(40, 70), LabelPreset(30, 20), LabelPreset(30, 15), LabelPreset(30, 30),
-        LabelPreset(25, 25), LabelPreset(25, 15), LabelPreset(20, 10), LabelPreset(30, 40, note: "staand"),
-        LabelPreset(50, 30, type: .transparent, note: "transparant"),
-        LabelPreset(50, 30, type: .continuous, note: "doorlopend"),
+        (50, 30), (50, 20), (50, 15), (50, 40), (50, 50), (60, 40), (60, 30), (70, 40), (70, 50), (80, 50),
+        (40, 30), (40, 20), (40, 40), (30, 20), (30, 15), (30, 30), (25, 25), (25, 15), (20, 10),
+    ].map { LabelPreset($0.0, $0.1, rotation: 90) } + [
+        LabelPreset(50, 30, rotation: 90, type: .transparent, note: "transparant"),
+        LabelPreset(50, 30, rotation: 90, type: .continuous, note: "doorlopend"),
     ]
 
     /// Presets for narrow printers (D11, D110, D101, B18); designed landscape, printed rotated.

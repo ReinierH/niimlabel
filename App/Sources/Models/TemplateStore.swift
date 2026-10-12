@@ -126,7 +126,7 @@ enum SampleLabels {
     }
 
     static var address: LabelDocument {
-        LabelDocument(name: "Adreslabel", widthMM: 50, heightMM: 30, elements: [
+        LabelDocument(name: "Adreslabel", widthMM: 50, heightMM: 30, printRotation: 90, elements: [
             LabelElement(x: 3, y: 3, width: 44, height: 7,
                          content: .text(TextContent(text: "Jan Jansen", fontSize: 14, bold: true))),
             LabelElement(x: 3, y: 10.5, width: 44, height: 12,
@@ -138,7 +138,7 @@ enum SampleLabels {
     }
 
     static var product: LabelDocument {
-        LabelDocument(name: "Product met barcode", widthMM: 50, heightMM: 30, elements: [
+        LabelDocument(name: "Product met barcode", widthMM: 50, heightMM: 30, printRotation: 90, elements: [
             LabelElement(x: 2, y: 2, width: 46, height: 8,
                          content: .text(TextContent(text: "Product", fontSize: 16, bold: true, alignment: .center, autoFit: true))),
             LabelElement(x: 3, y: 11, width: 44, height: 13,
@@ -149,7 +149,7 @@ enum SampleLabels {
     }
 
     static var qr: LabelDocument {
-        LabelDocument(name: "QR-code", widthMM: 40, heightMM: 30, elements: [
+        LabelDocument(name: "QR-code", widthMM: 40, heightMM: 30, printRotation: 90, elements: [
             LabelElement(x: 2, y: 3, width: 24, height: 24, content: .qrCode(QRContent(value: "https://computhings.nl"))),
             LabelElement(x: 26.5, y: 3, width: 12, height: 24,
                          content: .text(TextContent(text: "Scan\nmij", fontSize: 12, bold: true, alignment: .center))),
